@@ -57,13 +57,13 @@
   }
   
   #modal {
-    position: fixed;
-    width: 60%;
+    position: fixed; 
+    width: 295px; 
+    height: 410px;
     top: 50%;
     left: 50%;
     background-color: white;
     transform: translate(-50%, -50%);
-    padding: 1rem;
     border-radius: 15px;
     z-index: 10;
   }
@@ -75,22 +75,26 @@
     pointer-events: all;
   }
   
-  #modalHeader {
-    display: flex;
-    justify-content: space-between;
-  }
-  
   #modal.hide,
   #fade.hide {
     opacity: 0;
     pointer-events: none;
   }
-
-  .tipo {
-    width: 45px;
-    display: block;
-    margin: auto;
+  #carta {
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+    scale: 1.2;
+    transform: translate(0, 30px);
   }
+
+  #fecharModal {
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    top:0;
+  }
+
   
   form {
     display: flex;
@@ -123,12 +127,6 @@
     background-color: darkred;
   }
   
-  #conteudo {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    align-items: center;
-  }
   .pokeDiv {
     display: flex;
     flex-direction: column;
@@ -147,5 +145,33 @@
   
   .pokeName {
     color: white;
+  }
+
+  #conteudo {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+  }
+
+  @media (max-width:500px) {
+    #conteudo {
+      grid-template-columns: 1fr;
+    }
+    form {
+      padding: 1rem;
+      width: 100%;
+    }
+  }
+  @media (min-width: 500px) {
+    #conteudo {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width:900px) {
+    #conteudo {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
   }
   
