@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    background-image: url("https://th.bing.com/th/id/R.cee93a7f716562673bb24118b97ff191?rik=WDw7GDIlyX2YaA&pid=ImgRaw&r=0");
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+  }
+  
+  .page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+  }
+  
+  .page-logo {
+    width: 200px;
+  }
+  
+  .alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  body > img {
+    margin: 0 10px;
+  }
+  
+  img {
+    max-height: 250px;
+  }
+  
+  #fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+  }
+  
+  #modal {
+    position: fixed;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    border-radius: 15px;
+    z-index: 10;
+  }
+  
+  #fade,
+  #modal {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  #modalHeader {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #modal.hide,
+  #fade.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .tipo {
+    width: 45px;
+    display: block;
+    margin: auto;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  input {
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+  }
+  
+  button:hover {
+    background-color: darkred;
+  }
+  
+  #conteudo {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .pokeDiv {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  .pokemon {
+    background-color: #ffffff30;
+    border-radius: 100%;
+    margin-right: 15px;
+    transition: ease-in-out 0.5s;
+  }
+  .pokemon:hover {
+    scale: 1.2;
+  }
+  
+  .pokeName {
+    color: white;
+  }
+  

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div id="fade" class="hide"></div>
+        <div id="modal" class="hide">
+            <div id="modalHeader">
+                <h2 class="modalNome">texto</h2>
+                <button onclick="toggleModal()" id="fecharModal">X</button>
+            </div>
+            <img class="modalImg" src="">
+            <div>
+               <span><img src="" class="tipo"></p></span>
+               <span><img src="" class="tipo2"></span>
+
+            </div>
+            <p class="descricao">texto</p>
+            <p>texto</p>
+        </div>
+        <h1 class="page-title">
+            Pokeflix
+        </h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo"
+            alt="">
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+    <form class=" buscaContainer">
+        <input id="nomeDoPoke" type="text" autocomplete="nope" placeholder="Nome do Pokemon">
+        <input id="input" type="text" autocomplete="nope" placeholder="URL com final jpg ou png">
+        <button id="adicionar">Adicionar</button>
+    </form>
+    <div id="conteudo"></div>
+
+</body>
+
+</html>
